@@ -1,0 +1,77 @@
+# Smart-Campus-Parking-System
+Smart Campus Parking System for managing and reserving campus parking slots.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚗 Smart Parking System</h1>
+        <p>Find and reserve your parking slot easily</p>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="card">
+                <h3>Total Slots</h3>
+                <p id="totalSlots">12</p>
+            </div>
+
+            <div class="card available">
+                <h3>Available</h3>
+                <p id="availableSlots">12</p>
+            </div>
+
+            <div class="card occupied">
+                <h3>Occupied</h3>
+                <p id="occupiedSlots">0</p>
+            </div>
+        </section>
+
+        <section class="parking-area">
+            <h2>Parking Slots</h2>
+
+            <div id="parkingGrid" class="parking-grid"></div>
+        </section>
+
+        <section class="booking">
+            <h2>Book Parking Slot</h2>
+
+            <form id="bookingForm">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="vehicle"
+                    placeholder="Vehicle number"
+                    required
+                >
+
+                <select id="slot" required>
+                    <option value="">Select Slot</option>
+                </select>
+
+                <button type="submit">Book Slot</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Smart Parking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
